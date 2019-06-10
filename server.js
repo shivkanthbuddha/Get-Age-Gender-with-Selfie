@@ -15,8 +15,8 @@ app.use(express.static(path.join(__dirname, '../media')))
 app.use(express.static(path.join(__dirname, '../../weights')))
 app.use(express.static(path.join(__dirname, '../../dist')))
 
-app.get('/', (req, res) => res.redirect('/ageGender'))
-app.get('/ageGender', (req, res) => res.sendFile(path.join(viewsDir, 'ageGender.html')))
+app.get('/', (req, res) => res.redirect('/index'))
+app.get('/index', (req, res) => res.sendFile(path.join(viewsDir, 'index.html')))
 
 app.post('/fetch_external_image', async (req, res) => {
   const { imageUrl } = req.body
