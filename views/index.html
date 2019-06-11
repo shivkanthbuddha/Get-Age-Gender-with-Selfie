@@ -190,9 +190,10 @@
         // interpolate gender predictions over last 30 frames
         // to make the displayed age more stable
         const interpolatedAge = interpolateAgePredictions(age)
+        avgAge = faceapi.round(interpolatedAge, 0)
         new faceapi.draw.DrawTextField(
           [
-            `${faceapi.round(interpolatedAge, 0)} years`,
+            `${faceapi.round(interpolatedAge, 0)-2} to  ${faceapi.round(interpolatedAge, 0)+3} years`,
             `${gender} (${faceapi.round(genderProbability)})`
           ],
           result.detection.box.bottomLeft
