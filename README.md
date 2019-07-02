@@ -10,4 +10,4 @@ A node js application which predicts the age and gender of the faces found on th
  [Live Demo] @ https://hidden-mesa-68042.herokuapp.com
 
    [Live Demo]: https://hidden-mesa-68042.herokuapp.com
-   [justadudewhohacks]https://github.com/justadudewhohacks/face-api.js
+   [justadudewhohacks]: https://github.com/justadudewhohacks/face-api.js
